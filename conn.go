@@ -5,8 +5,6 @@ import (
 	"encoding"
 	"errors"
 	"fmt"
-	"github.com/sandertv/go-raknet/internal"
-	"github.com/sandertv/go-raknet/internal/message"
 	"io"
 	"net"
 	"net/netip"
@@ -14,17 +12,25 @@ import (
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/sandertv/go-raknet/internal"
+	"github.com/sandertv/go-raknet/internal/message"
 )
 
 const (
-	// protocolVersion is the current RakNet protocol version. This is Minecraft
-	// specific.
-	protocolVersion byte = 11
-
 	minMTUSize    = 576
 	maxMTUSize    = 1492
 	maxWindowSize = 2048
 )
+
+// protocolVersion is the current RakNet protocol version.
+// This is Minecraft specific.
+var protocolVersion byte = 11
+
+// Set a custom protocol version for the RakNet connection.
+func SetProtocolVersion(version int) {
+	protocolVersion = byte(version)
+}
 
 // Conn represents a connection to a specific client. It is not a real
 // connection, as UDP is connectionless, but rather a connection emulated using
