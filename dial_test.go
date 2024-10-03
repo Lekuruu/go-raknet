@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sandertv/go-raknet"
+	"github.com/lekuruu/go-raknet"
 )
 
 func TestPing(t *testing.T) {
