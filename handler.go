@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/lekuruu/go-raknet/internal/message"
+	"github.com/hexis-revival/go-raknet/internal/message"
 	"hash/crc32"
 	"log/slog"
 	"net"

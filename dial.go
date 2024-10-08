@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/lekuruu/go-raknet/internal"
+	"github.com/hexis-revival/go-raknet/internal"
 	"log/slog"
 	"math/rand/v2"
 	"net"
 	"sync/atomic"
 	"time"
 
-	"github.com/lekuruu/go-raknet/internal/message"
+	"github.com/hexis-revival/go-raknet/internal/message"
 )
 
 // UpstreamDialer is an interface for anything compatible with net.Dialer.

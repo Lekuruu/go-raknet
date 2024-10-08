@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/lekuruu/go-raknet"
+	"github.com/hexis-revival/go-raknet"
 )
 
 func TestPing(t *testing.T) {

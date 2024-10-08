@@ -3,7 +3,7 @@ package raknet
 import (
 	"errors"
 	"fmt"
-	"github.com/lekuruu/go-raknet/internal"
+	"github.com/hexis-revival/go-raknet/internal"
 	"log/slog"
 	"maps"
 	"math"

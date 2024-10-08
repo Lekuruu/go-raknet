@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lekuruu/go-raknet/internal"
-	"github.com/lekuruu/go-raknet/internal/message"
+	"github.com/hexis-revival/go-raknet/internal"
+	"github.com/hexis-revival/go-raknet/internal/message"
 )
 
 const (
