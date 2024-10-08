@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > This is a fork of sandertv's raknet implementation, with some small modifications
-> to fit my needs. Please don't use this, unless you know what you are doing!
+> to fit our needs. Please don't use this, unless you know what you are doing!
 
 go-raknet is a library that implements a basic version of the RakNet protocol, which is used for
 Minecraft (Bedrock Edition). It implements Unreliable, Reliable and 
